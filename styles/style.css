@@ -21,29 +21,18 @@ body {
     color: var(--text-color);
 }
 
-header {
-    height: 7vh;
-    background-color: var(--header-color);
-    padding: 0 10vw 0 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container-fluid {
+    margin-left: 10%;
 }
 
-.header-nav ul {
-    display: flex;
+.navbar-brand {
+    margin-right: 60%;
 }
 
-.header-nav ul li {
-    list-style: none;
-    padding: 0 2vw 0 2vw;
-}
-
-.header-nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
+.nav-link {
     font-weight: 600;
     font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 .small-text {
@@ -57,12 +46,18 @@ header {
     align-items: center;
 }
 
+.small-text p {
+    margin: 0;
+    text-align: center;
+}
+
 /* 
 *   Degradê ao contrário caso precise
 *
 *   background: rgb(255,255,255);
 *   background: linear-gradient(0deg, rgba(255,255,255,0) 39%, rgba(244,244,244,0) 63%, rgba(0,0,0,0.8995973389355743) 91%);
 */
+
 .banner-img {
     height: 90vh;
     display: flex;
@@ -78,9 +73,6 @@ header {
             rgba(0, 0, 0, 0.8995973389355743) 91%
         ),
         url(../images/banner.jpg);
-}
-
-.banner-img .main-text {
 }
 
 .banner-img .main-text p {
@@ -100,6 +92,7 @@ header {
 .banner-img .subtitle .subtitle-block {
     display: flex;
     flex-direction: column;
+    margin: 0px 12px;
     align-items: center;
 }
 
@@ -111,4 +104,59 @@ header {
 .subtitle-block .subtitle-second-text {
     font-size: 1.4rem;
     font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 12vh;
+}
+
+.specification {
+    display: flex;
+    justify-content: center;
+}
+
+.specification-card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-card {
+    height: 3rem;
+    margin-bottom: 5%;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+    color: var(--text-color);
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0 18%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .small-text {
+        height: 10vh;
+    }
 }
