@@ -1,0 +1,110 @@
+:root {
+    --header-color: #f4f6fb;
+    --primary-color: #040fff;
+    --text-color: #373f41;
+    --banner-small-text: #0b2865;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    color: var(--text-color);
+}
+
+header {
+    height: 7vh;
+    background-color: var(--header-color);
+    padding: 0 10vw 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul {
+    display: flex;
+}
+
+.header-nav ul li {
+    list-style: none;
+    padding: 0 2vw 0 2vw;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.small-text {
+    height: 3vh;
+    background-color: var(--banner-small-text);
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+*   Degradê ao contrário caso precise
+*
+*   background: rgb(255,255,255);
+*   background: linear-gradient(0deg, rgba(255,255,255,0) 39%, rgba(244,244,244,0) 63%, rgba(0,0,0,0.8995973389355743) 91%);
+*/
+.banner-img {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 39%,
+            rgba(244, 244, 244, 0) 63%,
+            rgba(0, 0, 0, 0.8995973389355743) 91%
+        ),
+        url(../images/banner.jpg);
+}
+
+.banner-img .main-text {
+}
+
+.banner-img .main-text p {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.banner-img .subtitle {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 25% 4vh;
+    color: white;
+}
+
+.banner-img .subtitle .subtitle-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle-block .subtitle-primary-text {
+}
+
+.subtitle-block .subtitle-second-text {
+}
