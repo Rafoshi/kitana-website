@@ -3,6 +3,9 @@
     --primary-color: #040fff;
     --text-color: #373f41;
     --banner-small-text: #0b2865;
+    --button-color: #11347e;
+    --button-border: #113a76;
+    --button-hover-color: #0c255c;
 }
 
 * {
@@ -13,7 +16,6 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
 }
 
 body {
@@ -31,7 +33,7 @@ body {
 
 .nav-link {
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 16px;
     color: var(--text-color);
 }
 
@@ -40,7 +42,7 @@ body {
     background-color: var(--banner-small-text);
     color: white;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,11 +74,11 @@ body {
             rgba(244, 244, 244, 0) 63%,
             rgba(0, 0, 0, 0.8995973389355743) 91%
         ),
-        url(../images/banner.jpg);
+        url(../images/kitana1.jpg);
 }
 
 .banner-img .main-text p {
-    font-size: 4rem;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
     padding-top: 5vh;
@@ -98,11 +100,11 @@ body {
 
 .subtitle-block .subtitle-primary-text {
     font-weight: 700;
-    font-size: 2.8rem;
+    font-size: 28px;
 }
 
 .subtitle-block .subtitle-second-text {
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
 }
@@ -110,43 +112,31 @@ body {
 h2 {
     color: var(--text-color);
     font-weight: 700;
-    font-size: 3.2rem;
-    text-align: center;
-    margin-top: 20vh;
+    font-size: 32px;
+    margin-top: 12vh !important;
     margin-bottom: 12vh;
 }
 
-.specification {
-    display: flex;
-    justify-content: center;
+label {
+    font-size: 18px;
 }
 
-.specification-card {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#button-submit {
+    width: 100%;
+    margin-top: 20px;
 }
 
-.img-card {
-    height: 3rem;
-    margin-bottom: 5%;
+.btn-primary {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-border);
 }
 
-.card-title {
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin-bottom: 2%;
-    color: var(--text-color);
+.btn-primary:hover {
+    background-color: var(--button-hover-color);
 }
 
-.card-text {
-    font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin: 0 18%;
+.quotes {
+    height: 80px;
 }
 
 @media only screen and (max-width: 1200px) {
